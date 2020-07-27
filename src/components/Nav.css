@@ -17,13 +17,13 @@
 }
 .nav__logo{
     position : fixed;
-    left: 30px;
+    left: 40px;
     width: 80px;
     object-fit: contain;
 }
 .nav__avatar{
     position: fixed;
-    right: 30px;
+    right: 40px;
     width : 30px;
     object-fit: contain;
 }

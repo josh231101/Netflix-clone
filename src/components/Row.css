@@ -2,11 +2,14 @@
     margin-left : 20px;
     color : white;
 }
+h2{
+    padding-left: 20px;
+}
 .row__posters{
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
 }
 .row__posters::-webkit-scrollbar{
     display: none;

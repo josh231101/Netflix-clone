@@ -11,16 +11,16 @@
 <img src="https://i.ibb.co/DzwZLHy/Netlfix-play-clonr.png">
 
 ## Topics : 
-:movie_camer: 1. IMDB API <br>
-:movie_camer: 2. Using an API in React <br>
-:movie_camer: 3. Axios dependencie to make the requests <br>
-:movie_camer: 4. Transitions <br>
-:movie_camer: 5. Carousel effect <br>
-:movie_camer: 6. Navbar transition <br>
-:movie_camer: 7. ASYNC Javascript <br>
-:movie_camer: 8. Promises <br>
-:movie_camer: 9. React Hooks <br>
-:movie_camer: 10. React Youtube component and movieTrailer <br>
+:movie_camera: 1. IMDB API <br>
+:movie_camera: 2. Using an API in React <br>
+:movie_camera: 3. Axios dependencie to make the requests <br>
+:movie_camera: 4. Transitions <br>
+:movie_camera: 5. Carousel effect <br>
+:movie_camera: 6. Navbar transition <br>
+:movie_camera: 7. ASYNC Javascript <br>
+:movie_camera: 8. Promises <br>
+:movie_camera: 9. React Hooks <br>
+:movie_camera: 10. React Youtube component and movieTrailer <br>
 
 ## Tech Stack
 :clapper: **Fron-end** React <br>

@@ -2,7 +2,7 @@ import React from 'react';
 import Row from "./Row";
 import Banner from "./Banner";
 import Nav from "./Nav";
-import requests from "../requests";
+import requests from "../API/requests";
 import './App.css';
 
 function App() {

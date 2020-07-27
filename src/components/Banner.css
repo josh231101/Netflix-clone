@@ -3,6 +3,18 @@
     object-fit : contain;
     height : 448px;
 }
+@media (min-width : 1500px){
+    .banner{
+        position: relative;
+        height: 600px;
+    }
+    .banner--fadeBottom{
+        position:absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40rem;
+    }
+}
 
 .banner__contents{
     margin-left: 40px;
@@ -14,7 +26,6 @@
     font-weight: 800;
     padding-bottom: 0.5rem;
 }
-
 .banner__description{
     width: 45rem;
     line-height: 1.3;
@@ -23,6 +34,15 @@
     font-size:1rem;
     max-width: 400px;
     height : 80px;
+}
+.banner--fadeBottom {
+    height: 7.4rem;
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(37, 37, 37, 0.61),
+      #111
+    );
 }
 .banner__buttons{
     display: flex;
@@ -61,15 +81,7 @@
     color:white;
 }
 
-.banner--fadeBottom {
-    height: 7.4rem;
-    background-image: linear-gradient(
-      180deg,
-      transparent,
-      rgba(37, 37, 37, 0.61),
-      #111
-    );
-  }
+
 
 .space{
     margin-left: 4px;

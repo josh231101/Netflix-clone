@@ -1,8 +1,8 @@
 import React,{useState,useEffect} from 'react';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
-import axios from "../axios";
-import requests from "../requests";
+import axios from "../API/axios";
+import requests from "../API/requests";
 import "./Banner.css";
 
 function Banner() {
@@ -28,11 +28,11 @@ function Banner() {
     return (
         <header className="banner"
             style={{
-                backgroundSize: "cover",
                 backgroundImage : `url(
                     "https://image.tmdb.org/t/p/original/${movie?.backdrop_path}"
                     )`,
                 backgroundPosition : "center center",
+                backgroundSize: "cover",
             }}
         >
             <div className="banner__contents">

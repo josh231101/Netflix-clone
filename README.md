@@ -11,31 +11,29 @@
 <img src="https://i.ibb.co/DzwZLHy/Netlfix-play-clonr.png">
 
 ## Topics : 
-1. IMDB API
-2. Using an API in React
-3. Axios dependencie to make the requests
-4. Transitions
-5. Carousel effect
-6. Navbar transition
-7. ASYNC Javascript
-8. Promises
-9. React Hooks
-10. React Youtube component and movieTrailer
+:movie_camer: 1. IMDB API <br>
+:movie_camer: 2. Using an API in React <br>
+:movie_camer: 3. Axios dependencie to make the requests <br>
+:movie_camer: 4. Transitions <br>
+:movie_camer: 5. Carousel effect <br>
+:movie_camer: 6. Navbar transition <br>
+:movie_camer: 7. ASYNC Javascript <br>
+:movie_camer: 8. Promises <br>
+:movie_camer: 9. React Hooks <br>
+:movie_camer: 10. React Youtube component and movieTrailer <br>
 
 ## Tech Stack
-:clapper: **Fron-end** React
-:clapper: **Back-end** Firebase
+:clapper: **Fron-end** React <br>
+:clapper: **Back-end** Firebase<br>
 
 ## Installation
 Clone the repo in your terminal writting:
 
-```
-$ git clone https://github.com/josh231101/EJS-Blog-Web-Page.git
-```
+#### ```$ git clone https://github.com/josh231101/EJS-Blog-Web-Page.git```
 
 In the project directory, you can run:
 
-`npm start`
+#### `npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -58,7 +56,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+#### `npm run eject`
 
 ## TODO :computer:
 :pushpin: Implement LogIn and Register session <br>

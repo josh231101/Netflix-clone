@@ -1,9 +1,8 @@
 import React,{useState,useEffect} from 'react';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
-import { spacing } from '@material-ui/system';
-import axios from "./axios";
-import requests from "./requests";
+import axios from "../axios";
+import requests from "../requests";
 import "./Banner.css";
 
 function Banner() {
@@ -41,7 +40,7 @@ function Banner() {
                 <h1 className="banner__title">{movie?.title || movie?.name || movie?.original_name}</h1>
                 <div className="banner__buttons">
                     <button className="banner__button play"><PlayArrowIcon />Play</button>
-                    <button className="banner__button info"><InfoOutlinedIcon fontSize="small"  paddingRight={20} marginRight={100}/><em>..</em> More Information</button>
+                    <button className="banner__button info"><InfoOutlinedIcon fontSize="small"  paddingRight={20} marginRight={100}/><div className="space"></div> More Information</button>
                     
                 </div>
                 {/**DIV > 2 BUTTONS */}

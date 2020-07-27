@@ -70,6 +70,7 @@
       #111
     );
   }
-em{
-    color : rgba(109,109,110,0.7)
+
+.space{
+    margin-left: 4px;
 }

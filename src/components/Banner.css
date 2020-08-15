@@ -15,7 +15,7 @@
         height: 40rem;
     }
 }
-@media(min-width : 768px){
+@media(max-width : 768px){
     .banner__contents{
         width: min-content;
         padding-left: 2.3rem;

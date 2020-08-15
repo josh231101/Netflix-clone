@@ -17,14 +17,14 @@
 }
 @media(max-width : 768px){
     .banner__contents{
-        width: min-content;
+        width: min-content !important;
         padding-left: 2.3rem;
-        margin-left: 0px;
+        margin-left: 0px !important;
 
     }
     .banner__description{
-        font-size: 0.8rem;
-        width: auto;
+        font-size: 0.8rem !important;
+        width: auto !important;
     }
     .info{
         text-align: start;
@@ -32,6 +32,10 @@
     }
     .space{
         margin-left: 6px;
+    }
+    .banner__button{
+        font-size: 0.8rem !important;
+        border-radius: 4px !important;
     }
 }
 .banner__contents{

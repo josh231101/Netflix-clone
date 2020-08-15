@@ -15,7 +15,25 @@
         height: 40rem;
     }
 }
+@media(min-width : 768px){
+    .banner__contents{
+        width: min-content;
+        padding-left: 2.3rem;
+        margin-left: 0px;
 
+    }
+    .banner__description{
+        font-size: 0.8rem;
+        width: auto;
+    }
+    .info{
+        text-align: start;
+        padding-right: 1.2rem;
+    }
+    .space{
+        margin-left: 6px;
+    }
+}
 .banner__contents{
     margin-left: 40px;
     padding-top: 140px;

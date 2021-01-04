@@ -5,10 +5,10 @@ import axios from "../API/axios";
 import requests from "../API/requests";
 import "./Banner.css";
 
-function Banner() {
+const Banner= ()=> {
     const [movie,setMovie] = useState([]);
 
-    function truncate(str, n) {
+    const truncate = (str, n)=> {
         return str?.length > n ? str.substr(0, n - 1) + "..." : str;
     }
 

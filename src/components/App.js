@@ -5,7 +5,7 @@ import Nav from "./Nav";
 import requests from "../API/requests";
 import './App.css';
 
-function App() {
+const  App=()=> {
   return (
     <div className="app">
       {/**NAV */}

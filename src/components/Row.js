@@ -1,14 +1,14 @@
 import React, {useState,useEffect} from 'react'
 import axios from "../API/axios";
-import Youtube from "react-youtube";
-import movieTrailer from "movie-trailer";
 import "./Row.css";
+import MovieModal from './MovieModal';
 
 
 const Row= ({title,fetchUrl,isLargeRow})=> {
     const base_url = "https://image.tmdb.org/t/p/original/";
     const [movies, setMovies] = useState([])
-    const [trailerUrl ,setTrailerUrl] = useState("") 
+    const [modalVisibility,setModalVisibility] = useState(false);
+    const [movieSelected, setMovieSelection] = useState({});
 
     //A snippet of code which runs based on a specific condition/variable
     useEffect(()=>{
@@ -18,7 +18,6 @@ const Row= ({title,fetchUrl,isLargeRow})=> {
         async function fetchData(){
             //Dont move until we get the API answer
             const request = await axios.get(fetchUrl);
-            console.log(request.data.results);
             // GET REQUEST  = "https://api.themoviedb.org/3/fetchUrl"
             setMovies(request.data.results)
             return request;
@@ -27,23 +26,11 @@ const Row= ({title,fetchUrl,isLargeRow})=> {
         fetchData();
 
     }, [fetchUrl]);
-    const opts = {
-        height : "390",
-        width : "100%",
-        playerVars : {
-            autoplay : 1,
-        },
-    }
+
     const handleClick = (movie) =>{
-        if(trailerUrl){
-            setTrailerUrl('')
-        }else{
-            movieTrailer(movie?.name || "")
-            .then(url =>{
-                const urlParams = new URLSearchParams(new URL(url).search);
-                setTrailerUrl(urlParams.get('v'));
-            }).catch(error => console.log(error))
-        }
+        setModalVisibility(true);
+        setMovieSelection(movie);
+
     }
     return (
         <section className="row">
@@ -63,8 +50,7 @@ const Row= ({title,fetchUrl,isLargeRow})=> {
                 ))}
 
             </div>
-            {trailerUrl && <Youtube videoId={trailerUrl} opts={opts}/> }
-            
+            {modalVisibility && <MovieModal {...movieSelected} setModalVisibility={setModalVisibility}/>}
         </section>
     )
 }

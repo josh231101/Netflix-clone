@@ -6,7 +6,6 @@ h2 {
   padding-left: 20px;
 }
 .row__posters {
-  position: relative;
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;

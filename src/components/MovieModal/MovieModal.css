@@ -66,6 +66,7 @@
   right: 20px;
   top: 20px;
   cursor: pointer;
+  z-index: 1000;
 }
 @media screen and (max-height: 768px) {
   .wrapper-modal {
